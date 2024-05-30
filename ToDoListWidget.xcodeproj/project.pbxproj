@@ -31,7 +31,7 @@
 		1D57BB082C08376500AEB8B3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		1D7546BE2C08411800B7EDF6 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		1D7546C02C08441100B7EDF6 /* TaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
-		1D8263872C084B8C006DF16B /* TaskData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TaskData.json; path = ../../../../../Downloads/TaskData.json; sourceTree = "<group>"; };
+		1D8263872C084B8C006DF16B /* TaskData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TaskData.json; sourceTree = "<group>"; };
 		1D8263892C0851B5006DF16B /* DoneTaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTaskList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
