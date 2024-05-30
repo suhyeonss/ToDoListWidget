@@ -3,21 +3,24 @@
     "id": 1,
     "category": "Study",
     "name": "SQLD study",
+    "memo": "p. 1 - 100",
+    "dueto": "2024.6.1",
     "isDone": true
-    "memo": "에스큐엘디스터디"
   },
   {
     "id": 2,
     "category": "HouseWork",
     "name": "do the Dishs",
+    "memo": "a lot",
+    "dueto": "2024.6.2",
     "isDone": false
-    "memo": "1두더디시즈"
   },
   {
     "id": 3,
     "category": "HouseWork",
     "name": "Sweeping",
+    "memo": "room 2",
+    "dueto": "2024.6.7",
     "isDone": false
-    "memo": "스위핑~"
   }
 ]
