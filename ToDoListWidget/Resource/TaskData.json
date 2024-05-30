@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "category": "Study",
+    "name": "SQLD study",
+    "isDone": "TRUE"
+  },
+  {
+    "id": 2,
+    "category": "HouseWork",
+    "name": "do the Dishs",
+    "isDone": "FALSE"
+  },
+  {
+    "id": 3,
+    "category": "HouseWork",
+    "name": "Sweeping",
+    "isDone": "FALSE"
+  }
+]
