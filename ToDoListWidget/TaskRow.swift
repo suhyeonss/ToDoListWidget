@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct TaskRow: View {
+    var task: Task
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(task.category)
+            Text("|")
+            Text(task.name)
+            Spacer()
+            if task.isDone {
+                Image(systemName: "checkmark.circle.fill")
+            } else {
+                Image(systemName: "circle")
+            }
+
+        }.padding(10)
     }
 }
 
 #Preview {
-    TaskRow()
+    Group {
+        TaskRow(task: tasks[0])
+        TaskRow(task: tasks[1])
+    }
 }

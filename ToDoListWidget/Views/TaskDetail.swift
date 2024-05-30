@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct TaskDetail: View {
+    var task: Task
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(task.name)
+
+            HStack {
+                Text(task.memo)
+            }
+        }
     }
 }
 
 #Preview {
-    TaskDetail()
+    TaskDetail(task: tasks[0])
 }

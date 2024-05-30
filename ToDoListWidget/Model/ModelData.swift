@@ -7,7 +7,7 @@
 
 import Foundation
 
-var tasks: [Task] = load("taskData.json")
+var tasks: [Task] = load("TaskData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

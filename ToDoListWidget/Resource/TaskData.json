@@ -3,18 +3,21 @@
     "id": 1,
     "category": "Study",
     "name": "SQLD study",
-    "isDone": "TRUE"
+    "isDone": true
+    "memo": "에스큐엘디스터디"
   },
   {
     "id": 2,
     "category": "HouseWork",
     "name": "do the Dishs",
-    "isDone": "FALSE"
+    "isDone": false
+    "memo": "1두더디시즈"
   },
   {
     "id": 3,
     "category": "HouseWork",
     "name": "Sweeping",
-    "isDone": "FALSE"
+    "isDone": false
+    "memo": "스위핑~"
   }
 ]
