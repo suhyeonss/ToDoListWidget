@@ -8,29 +8,41 @@
 import SwiftUI
 
 struct TaskList: View {
-//    @State private var showNotisDonesOnly = true
+    @State private var showisDonesOnly = false
 
     var filteredTasks: [Task] {
         tasks.filter { task in
-            !task.isDone
+            !showisDonesOnly || !task.isDone
         }
     }
 
     var body: some View {
         NavigationSplitView {
-            // 이부분 다시 공부 필요하다..
-            List(filteredTasks) { task in
-                NavigationLink {
-                    TaskDetail(task: task)
-                } label: {
-                    TaskRow(task: task)
+            List {
+                Toggle(isOn: $showisDonesOnly) {
+                    Text("완료된 항목 안보기")
+                }
+                ForEach(filteredTasks) { task in
+                    NavigationLink {
+                        TaskDetail(task: task)
+                    } label: {
+                        TaskRow(task: task)
+                    }
                 }
             }
+            .animation(.default, value: filteredTasks)
             .navigationTitle("Tasks")
+            .toolbar {
+                Button("filter", systemImage: "line.3.horizontal", action: printing)
+            }
         } detail: {
             Text("Select A Task")
         }
     }
+}
+
+func printing() {
+    print("ddddddd")
 }
 
 #Preview {
