@@ -12,8 +12,6 @@ struct TaskRow: View {
 
     var body: some View {
         HStack {
-            Text(task.category)
-            Text("|")
             Text(task.name)
             Spacer()
             if task.isDone {
