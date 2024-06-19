@@ -14,11 +14,11 @@ struct TaskRow: View {
         HStack {
             Text(task.name)
             Spacer()
-            if task.isDone {
-                Image(systemName: "checkmark.circle.fill")
-            } else {
-                Image(systemName: "circle")
-            }
+//            if task.isDone {
+//                Image(systemName: "checkmark.circle.fill")
+//            } else {
+//                Image(systemName: "circle")
+//            }
 
         }.padding(10)
     }
