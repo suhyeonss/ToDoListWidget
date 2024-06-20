@@ -2,7 +2,7 @@
 //  TaskList.swift
 //  ToDoListWidget
 //
-//  Created by 이수현 on 5/30/24.
+//  Created by suhyeonss on 5/30/24.
 //
 
 import SwiftUI
@@ -18,7 +18,6 @@ struct DoneTaskList: View {
 
     var body: some View {
         NavigationSplitView {
-            // 이부분 다시 공부 필요하다..
             List(filteredTasks) { task in
                 NavigationLink {
                     TaskDetail(task: task)

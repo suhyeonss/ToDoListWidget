@@ -2,7 +2,7 @@
 //  TaskDetail.swift
 //  ToDoListWidget
 //
-//  Created by 이수현 on 5/30/24.
+//  Created by suhyeonss on 5/30/24.
 //
 
 import SwiftUI
@@ -18,13 +18,18 @@ struct TaskDetail: View {
                 Text(task.memo)
             }
             Spacer()
-            if task.isDone == false {
-                Button("완료하기") {
-                    print("완료")
-                }.buttonStyle(.bordered)
-            } else {
-                Button("취소하기") {
-                    print("취소")
+            HStack {
+                if task.isDone == false {
+                    Button("완료하기") {
+                        print("완료")
+                    }.buttonStyle(.bordered)
+                } else {
+                    Button("취소하기") {
+                        print("취소")
+                    }.buttonStyle(.borderedProminent)
+                }
+                Button("삭제하기") {
+                    print("삭제")
                 }.buttonStyle(.bordered)
             }
         }
@@ -32,5 +37,5 @@ struct TaskDetail: View {
 }
 
 #Preview {
-    TaskDetail(task: tasks[1])
+    TaskDetail(task: tasks[0])
 }

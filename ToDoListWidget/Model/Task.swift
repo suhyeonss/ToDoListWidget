@@ -2,7 +2,7 @@
 //  Landmark.swift
 //  ToDoListWidget
 //
-//  Created by 이수현 on 5/29/24.
+//  Created by suhyeonss on 5/29/24.
 //
 
 import CoreLocation
